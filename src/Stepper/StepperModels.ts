@@ -3,8 +3,19 @@ export interface StepProps{
     title: string;
     description: string;
     state: StepState;
+    selected: boolean;
 }
 
+export interface StepperProps{
+    selectedStep: number;
+    direction: StepperDirection;
+}
+
+export interface StepperData{
+    stepperProps: StepperProps;
+    steps: StepProps[];
+}
+    
 export enum StepState{
     IkkePåbegynt = 0,
     Aktiv = 1, 
@@ -16,19 +27,4 @@ export enum StepState{
 export enum StepperDirection{
     Vertical,
     Horisontal
-}
-
-
-
-
-
-export interface StepPropsLater{
-    icon: string;
-    title: string;
-    displaySteg: boolean;
-    state: StepState;
-    displayState: boolean;
-    description: string;
-    displayDescription: boolean;
-    direction: StepperDirection;
 }
