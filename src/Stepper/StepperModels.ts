@@ -1,3 +1,5 @@
+import { writable } from "svelte/store";
+
 export interface StepProps{
     icons: string[];
     title: string;

@@ -27,6 +27,12 @@
       description: "This is the fourth step",
       state: StepState.IkkePåbegynt,
     },
+    {
+      icons: ["settings"],
+      title: "Step 5",
+      description: "This is the fourth step",
+      state: StepState.IkkePåbegynt,
+    },
   ] as StepProps[];
 
   let stepperProps = {
@@ -36,5 +42,9 @@
 </script>
 
 <main>
-  <Stepper {stepperProps} {steps} />
+  <div style="display:flex;justify-content: center; top:100px">
+    <Stepper {stepperProps} {steps} />
+  </div>
 </main>
+
+
